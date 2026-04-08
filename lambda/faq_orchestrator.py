@@ -40,7 +40,7 @@ def lambda_handler(event, context):
     decision = decision_output["content"][0]["text"].strip().upper()
 
     # -----------------------------
-    # HANDLE UNKNOWN (VERY IMPORTANT 🔥)
+    # HANDLE UNKNOWN
     # -----------------------------
     if "UNKNOWN" in decision:
         return {
